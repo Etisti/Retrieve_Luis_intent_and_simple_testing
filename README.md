@@ -30,7 +30,9 @@ To run on docker follow these steps:
     -
 
 To run tests run :
-    - pytest /tests
+```
+pytest
+```
 
 
 ...

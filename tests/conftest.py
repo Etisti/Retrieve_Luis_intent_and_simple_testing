@@ -1,5 +1,9 @@
 # Fixtures are gathered here
-from pytest_mock import 
+from unittest.mock import Mock
+from pytest_mock import MockFixture
+import pytest
+
+@pytest.fixture
 def mock_requests_get(mocker: MockFixture) -> Mock:
     """Fixture for mocking requests.get."""
     mock = mocker.patch("requests.get")
